@@ -6,7 +6,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center justify-between min-h-screen p-10">
-      <div className="flex flex-col items-center justify-center space-y-4">
+      <div className="flex flex-col items-center justify-center space-y-4 p-5 border border-gray-200 shadow-lg rounded-xl">
         <h1 className="text-3xl font-bold">Add Notifications</h1>
         <button
           className={clsx(buttonStyle, "bg-blue-500")}
