@@ -1,3 +1,4 @@
+// Toast Component
 import {
   XCircleIcon,
   XMarkIcon,
@@ -30,15 +31,15 @@ const toastTypes = {
 };
 
 export interface ToastType {
+  id: number,
   type: "success"| "warning" | "error" | "info",
-  message: string,
-  id: number
+  message: string
 }
 
 export const Toast = ({
+  id,
   type,
-  message,
-  id
+  message
 }: ToastType) => {
   const { icon, iconClass, progressBarClass } = toastTypes[type];
 
